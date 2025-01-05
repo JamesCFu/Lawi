@@ -5,7 +5,7 @@
     <link rel="icon" href="download.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixination - All games</title>
+    <title>Lawi - All games</title>
     <style>
         body {
             font-family: 'Courier New', Courier, monospace;
@@ -21,7 +21,7 @@
         }
         header {
             background-color: #222;
-            color: #ffa500;
+            color: #FFA500;
             padding: 20px;
             text-align: center;
             width: 100%;
@@ -55,20 +55,29 @@
             border-radius: 4px;
             text-align: center;
             text-decoration: none;
-            color: 	#0f0;
+            color: #0f0;
             border: 1px solid #00f;
         }
         .game-link:hover {
             background-color: #073f10;
+            border: 1px solid #FFA500;
             scale: 1.1;
-            border: 1px solid #ffa500;
         }
-        
-       
+        .launch-button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .launch-button:hover {
+            background-color: darkred;
         }
     </style>
     <script>
-        const games = ['Game request', 'Leaderboards', 'Slope', 'Slope 2', 'PaperIO','PaperIO 2','Subway surfers', 
+        const games = ['Game request', 'Leaderboards', 'Slope', 'Slope 2', 'PaperIO','Subway surfers', 
                 'Eaglercraft', 'Precision client', 'Coreball', 
                 'Antimatter dimensions', 'Idle dice',
                 'Stick merge', 'Happy glass', 'Vex',
@@ -141,16 +150,14 @@
             font-weight: bold;
             color: rgb(3, 75, 9);
             text-align: center;
-        }
     </script>
 </head>
 <body>
     <header>
+        <h1>Pixination</h1>
+        <a class='top-left-button' href='/games/'>L</a>
         
-        <h1>Pixination Gaming</h1>
-      
     </header>
-    <a class='top-left-button' href='/games/'>Back to Home</a>
     <div class="container">
         <input type="text" id="gameSearch" class="search-bar" onkeyup="filterGames()" placeholder="Search here...">
     </div>
