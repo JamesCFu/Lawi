@@ -123,10 +123,30 @@
             iframe.src = url;
             win.document.body.appendChild(iframe);
         }
-    </script>
+        .top-left-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 40px;
+            height: 40px;
+            background-color: #124206; 
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1000; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: rgb(3, 75, 9);
+            text-align: center;
+        }
+ 
 </head>
 <body>
     <header>
+         <a class='top-left-button' href='/games/allgames.html'>G</a>
         <h1>Pixination Gaming</h1>
       
     </header>
